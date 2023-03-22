@@ -45,5 +45,23 @@ module.exports = {
       },
     },
     `gatsby-plugin-image`,
+    {
+      resolve: `gatsby-plugin-webfonts`,
+      options: {
+        fonts: {
+          google: [
+            {
+              family: 'Montserrat', // 'font-family' property
+              variants: ['300', '400', '500'],
+            },
+            {
+              family: 'Inconsolata',
+              variants: ['400', '500', '700'],
+            },
+          ],
+        },
+      },
+    },
+    `gatsby-plugin-react-helmet`,
   ],
 };
